@@ -22,6 +22,9 @@ def login(request):
                 auth.login(request, user)  # if the user is in the db - authorize
                 messages.success(request, f"{username}, вошли в аккаунт")
 
+                if request.POST.get('next', None):
+                    return HttpResponseRedirect(request.POST.get('next'))
+
                 return HttpResponseRedirect(reverse("main:index"))
     else:
         form = UserLoginForm()
