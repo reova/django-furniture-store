@@ -1,6 +1,5 @@
 # Furniture Shop on Django
 
-## Project Description
 Furniture store is a web application built on the Django framework that allows you to add, delete, view the range of furniture, add it to the cart, create orders, make purchases, register on the site and have a personal account.
 
 ## Installation Instructions
